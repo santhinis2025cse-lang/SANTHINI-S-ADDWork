@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tech Summit 2025</title>
+
+  <style>
+    /* Typography */
+    body {
+      font-family:cursive;
+      margin: 0;
+      background:palevioletred;
+      color: black;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    /* Header */
+    header {
+      background: blue;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    /* Grid layout */
+    .grid {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: purple;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background:darkgreen;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background:pink;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Accessible header -->
+  <header role="banner">
+    <h1>Tech Summit 2025</h1>
+    <p>Innovation • AI • Future Tech</p>
+    <a href="#register" class="btn" role="button">Register Now</a>
+  </header>
+
+  <!-- About the event -->
+  <section aria-label="About the event" class="grid">
+    <div class="card">
+      <h2>About</h2>
+      <p>Join us for a day of innovation with top industry leaders, sharing the insights on AI and emerging technologies.</p>
+    </div>
+
+    <div class="card">
+      <h2>Speakers</h2>
+      <p>Hear from world-class experts in technology and digital transformation.</p>
+    </div>
+
+    <div class="card">
+      <h2>Schedule</h2>
+      <p>A full-day event packed with keynotes, workshops, and networking sessions.</p>
+    </div>
+  </section>
+
+  <!-- Registration -->
+  <section id="register" aria-label="Register for event" class="grid">
+    <div class="card">
+      <h2>Register</h2>
+      <p>Secure your spot now.</p>
+      <button class="btn">Register →</button>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    © 2025 Tech Summit — All rights reserved.
+  </footer>
+
+</body>
+</html>
